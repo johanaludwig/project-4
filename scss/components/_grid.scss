@@ -1,3 +1,35 @@
+.grid__row {
+  padding-top: em(27px);
+  @include flex (column, center);
+  @include desk {
+    @include flex (row, center);
+  }
+}
+
+[class^="grid__col"] {
+  @extend %grid;
+  @include desk {
+    text-align: center;
+  }
+}
+
+.grid__col {
+  @include btn-colors($grid-col);
+}
+
+.grid__col--12 {
+  @include flex (column, center);
+  @include desk {
+    @include flex (row, space-around);
+  }
+}
+
+.card {
+  @include desk {
+    margin-right: em(48px);
+  }
+}
+
 @include desk {
   @for $i from 1 through $g-col-count {
   $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
@@ -31,43 +63,6 @@
 
     .grid__row:nth-of-type(11) {
       @include flex (row, center);
-    }
-  }
-}
-
-.grid__row {
-  padding-top: em(27px);
-  @include flex (column, center);
-    @include desk {
-      @include flex (row, center);
-    }
-}
-
-[class^="grid__col"] {
-  @extend %grid;
-  @include desk {
-    text-align: center;
-  }
-}
-
-.grid__col {
-  @include btn-colors($grid-col);
-}
-
-.grid__col--12 {
-  @include flex (column, center);
-  padding: em(16px);
-    @include desk {
-      @include flex (row, space-around);
-    }
-}
-
-.card {
-  @include desk {
-    margin-right: em(48px);
-    
-    p{
-      text-align: left;
     }
   }
 }
