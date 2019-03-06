@@ -1,0 +1,29 @@
+.link {
+    @extend %link;
+}
+
+.headline--primary {
+  @extend %primary;
+}
+
+.headline--secondary {
+  @extend %secondary;
+}
+
+.container {
+    color: $grey;
+    font-size: $base__font-size;
+    font-family: $font-family--primary;
+    line-height: ($base__line/$base__font-size);
+}
+
+.blockquote {
+    font-style: italic;
+    font-size: $base__line;
+    font-weight: $font-weight--light;
+    margin-right: em(20px);
+    padding-left: em(15px);
+    border-left: em(5px) solid $aqua;
+    border-radius: em(3px);
+    text-align: left;
+}

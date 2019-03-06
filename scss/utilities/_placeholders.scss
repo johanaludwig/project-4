@@ -1,0 +1,58 @@
+// Button style
+%btn {
+    width: 95%;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: em(16px);
+    font-weight: $font-weight--bold;
+    padding: em(16px) 0;
+    margin: em(10px);
+    border-radius: em(5px);
+  }
+
+// Grid
+%grid {
+  width: 95%;
+  border: none;
+  padding: em(10px) 0;
+  margin: em(8px);
+  font-size: $base__font-size;
+  border-radius: em(5px);
+}
+
+// Links styles
+  %link {
+    color: $blue;
+    font-weight: $font-weight--bold;
+    text-decoration: none;
+  }
+
+// Center align
+%center-align {
+	text-align: center;
+}
+
+// Images styles
+%image-style {
+  display: block;
+  margin: 0 auto;
+}
+
+//headlines
+%primary {
+  color: $aqua;
+  padding-left: em(8px);
+  text-align: left;
+}
+
+%secondary {
+  font-size: em(18px);
+  font-weight: $font-weight--thin; 
+  color: $color-tertiary;
+  text-align: left;
+  padding-top: 1.5em;
+  margin: 0;
+}
+
+

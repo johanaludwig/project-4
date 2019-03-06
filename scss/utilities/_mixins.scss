@@ -1,0 +1,22 @@
+  // Buttons Colors Map
+  @mixin btn-colors($map) {
+    @each $theme, $color in $map {
+      &--#{$theme}.theme__colors{
+        background-color: $color;   
+      }
+    }
+  }
+
+// Flex box
+@mixin flex ($flex-dir, $jus-con) {
+  display: flex;
+  justify-content: $jus-con;
+  flex-direction: $flex-dir;
+}
+
+// Media queries
+@mixin desk {
+  @media (min-width: #{$breakp-m}) {
+    @content;
+  }
+}

@@ -1,0 +1,73 @@
+@include desk {
+  @for $i from 1 through $g-col-count {
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+    .grid__col--#{$i} {
+      width: percentage( $target / $context );
+    }
+    .grid__row:nth-of-type(1) {
+       @include flex (row, center);
+     }
+
+    .grid__row:nth-of-type(4) {
+       @include flex (row, center);
+     }
+
+    .grid__row:nth-of-type(7) {
+    @include flex (row, center);
+    }
+
+    .grid__row:nth-of-type(8) {
+     @include flex (row, center);
+   }
+
+    .grid__row:nth-of-type(9) {
+     @include flex (row, center);
+   }
+
+    .grid__row:nth-of-type(10) {
+   @include flex (row, center);
+   }
+
+    .grid__row:nth-of-type(11) {
+    @include flex (row, center);
+  }
+ }
+}
+
+.container {
+  @include flex (column, center);
+  font-weight: $font-weight--light;
+  margin: em(32px);
+    @include desk {
+      margin: em(32px) em(48px);
+    }
+}
+
+.grid__row {
+  padding-top: em(27px);
+  @include flex (column, center);
+    @include desk {
+      @include flex (row, center);
+    }
+}
+
+[class^="grid__col"] {
+  @extend %grid;
+  @include desk {
+    text-align: center;
+  }
+
+}
+
+.grid__col {
+  @include btn-colors($grid-col);
+}
+
+.grid__col--12 {
+  @include flex (column, center);
+  padding: em(16px);
+    @include desk {
+      @include flex (row, space-around);
+    }
+}

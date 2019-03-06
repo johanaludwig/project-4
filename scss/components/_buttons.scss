@@ -1,0 +1,7 @@
+.btn {
+    @include btn-colors($buttons);
+}
+
+[class*="btn--"] {
+    @extend %btn;
+}

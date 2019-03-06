@@ -1,0 +1,27 @@
+.img {
+    &--avatar {
+      @extend %image-style;
+      border-radius: $br--round;
+      margin-top: em(20px);
+      }
+    &--frame {
+        border: 1px solid $color-tertiary;
+        padding: em(12px);
+        width: 100%;
+
+        @media (min-width: $breakp-m) {
+            width: 55%;
+        }
+    }
+}
+
+.img--logo {
+    width: em(150px);
+    display: block;
+    margin: auto;
+
+    @media (min-width: $breakp-m) {
+        display: inline-block;
+        width: em(180px);
+    }
+}

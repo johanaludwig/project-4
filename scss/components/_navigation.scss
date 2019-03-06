@@ -1,0 +1,30 @@
+.grid__col--9 {
+    margin-bottom: em(16px);
+    text-align: center;
+    @include flex (column, center);
+
+    a {
+        @extend %center-align;
+        color: $grey;
+        font-size: em(18px);
+        font-weight: $font-weight--light;
+    }
+    
+    li {
+        padding: em(13px);
+        @media (min-width: $breakp-m) {
+            display: inline-block;
+            margin: em(5px);
+        }
+    &:hover {
+        background-color: $aqua;
+        border-radius: $br--default;
+        font-weight: $font-weight--medium;
+        color: $white;
+        }
+    }
+
+    
+     
+    
+}
