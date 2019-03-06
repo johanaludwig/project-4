@@ -35,15 +35,6 @@
   }
 }
 
-.container {
-  @include flex (column, center);
-  font-weight: $font-weight--light;
-  margin: em(32px);
-    @include desk {
-      margin: em(32px) em(48px);
-    }
-}
-
 .grid__row {
   padding-top: em(27px);
   @include flex (column, center);

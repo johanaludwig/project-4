@@ -1,22 +1,22 @@
 .form {
     @include flex (column, center);
     
-    &__label--hidden {
-        display: none;
+    &__input {
+        border: none;
+        border-bottom: 5px solid $aqua;
+        margin: em(10px);
+        padding: em(27px);
+        font-size: em(12px);
+        font-family: 'Helvetica' sans-serif;
+        font-weight: $font-weight--medium;
+        color: $color-tertiary;
     }
 
-    &__input {
-    border: none;
-    border-bottom: 5px solid $aqua;
-    margin: em(10px);
-    padding: em(27px);
-    font-family: 'Helvetica' sans-serif;
-    font-weight: $font-weight--bold;
-    font-size: em(12px);
-    color: $color-tertiary;
+    &__label--hidden {
+        display: none;
     }
 
     @include desk {
         margin-left: em(16px);
     }
-  }
+}

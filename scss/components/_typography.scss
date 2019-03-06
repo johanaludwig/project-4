@@ -11,19 +11,26 @@
 }
 
 .container {
-    color: $grey;
-    font-size: $base__font-size;
-    font-family: $font-family--primary;
-    line-height: ($base__line/$base__font-size);
+  color: $grey;
+  font-size: $base__font-size;
+  font-family: $font-family--primary;
+  line-height: ($base__line/$base__font-size);
+  font-weight: $font-weight--light;
+  margin: em(32px);
+  text-align: left;
+  @include flex (column, center);
+    @include desk {
+      margin: em(32px) em(48px);
+    }
 }
 
 .blockquote {
-    font-style: italic;
-    font-size: $base__line;
-    font-weight: $font-weight--light;
-    margin-right: em(20px);
-    padding-left: em(15px);
-    border-left: em(5px) solid $aqua;
-    border-radius: em(3px);
-    text-align: left;
+  font-style: italic;
+  font-size: $base__line;
+  font-weight: $font-weight--light;
+  margin-right: em(20px);
+  padding-left: em(15px);
+  border-left: em(5px) solid $aqua;
+  border-radius: em(3px);
+  text-align: left;
 }

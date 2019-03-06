@@ -49,9 +49,9 @@ $grid-col: (
 $buttons:(
     default: $blue,
     success: $green,
-    error: $red,
+    error:   $red,
     warning: $orange,
-    info: $light-slate-blue,
+    info:    $light-slate-blue,
    );
 
 // Text
@@ -67,7 +67,6 @@ $g-col-width: 65px;
 $g-gutter-width: 5px;
 $g-col-count: 12;
 $g-cont-max-w: 1050px;
-$gutter: 20px;
 
 // Breakpoints
 $breakp-m: '768px';

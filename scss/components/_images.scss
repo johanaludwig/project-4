@@ -1,12 +1,12 @@
 .img {
     &--avatar {
-      @extend %image-style;
-      border-radius: $br--round;
-      margin-top: em(20px);
+        @extend %image-style;
+        border-radius: $br--round;
+        margin-top: em(20px);
 
-      @include desk {
-          margin-top: 0;
-      }
+        @include desk {
+            margin-top: 0;
+        }
     }
 
     &--frame {
