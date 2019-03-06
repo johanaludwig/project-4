@@ -7,32 +7,32 @@
     }
     .grid__row:nth-of-type(1) {
        @include flex (row, center);
-     }
+    }
 
     .grid__row:nth-of-type(4) {
-       @include flex (row, center);
-     }
+      @include flex (row, center);
+    }
 
     .grid__row:nth-of-type(7) {
-    @include flex (row, center);
+      @include flex (row, center);
     }
 
     .grid__row:nth-of-type(8) {
-     @include flex (row, center);
-   }
+      @include flex (row, center);
+    }
 
     .grid__row:nth-of-type(9) {
-     @include flex (row, center);
-   }
+      @include flex (row, center);
+    }
 
     .grid__row:nth-of-type(10) {
-   @include flex (row, center);
-   }
+      @include flex (row, center);
+    }
 
     .grid__row:nth-of-type(11) {
-    @include flex (row, center);
+      @include flex (row, center);
+    }
   }
- }
 }
 
 .container {
@@ -57,7 +57,6 @@
   @include desk {
     text-align: center;
   }
-
 }
 
 .grid__col {
@@ -70,4 +69,14 @@
     @include desk {
       @include flex (row, space-around);
     }
+}
+
+.card {
+  @include desk {
+    margin-right: em(48px);
+    
+    p{
+      text-align: left;
+    }
+  }
 }
