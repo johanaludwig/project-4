@@ -8,9 +8,9 @@
   }
 
 // Flex box
-@mixin flex ($flex-dir, $jus-con) {
+@mixin flex ($flex-dir, $jus-cont) {
   display: flex;
-  justify-content: $jus-con;
+  justify-content: $jus-cont;
   flex-direction: $flex-dir;
 }
 

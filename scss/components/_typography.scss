@@ -18,10 +18,12 @@
   font-weight: $font-weight--light;
   margin: em(32px);
   text-align: left;
+
   @include flex (column, center);
-    @include desk {
-      margin: em(32px) em(48px);
-    }
+
+  @include desk {
+    margin: em(32px) em(48px);
+  }
 }
 
 .blockquote {

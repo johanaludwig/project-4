@@ -8,7 +8,7 @@
     font-weight: $font-weight--bold;
     padding: em(16px) 0;
     margin: em(10px);
-    border-radius: em(5px);
+    border-radius: $br--default;
   }
 
 // Grid
@@ -18,15 +18,15 @@
   padding: em(10px) 0;
   margin: em(8px);
   font-size: $base__font-size;
-  border-radius: em(5px);
+  border-radius: $br--default;
 }
 
 // Links styles
-  %link {
-    color: $blue;
-    font-weight: $font-weight--bold;
-    text-decoration: none;
-  }
+%link {
+  color: $blue;
+  font-weight: $font-weight--bold;
+  text-decoration: none;
+}
 
 // Center align
 %center-align {
@@ -51,7 +51,7 @@
   font-weight: $font-weight--thin; 
   color: $color-tertiary;
   text-align: left;
-  padding-top: 1.5em;
+  padding-top: em(24px);
   margin: 0;
 }
 
