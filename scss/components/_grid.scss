@@ -13,10 +13,6 @@
   }
 }
 
-.grid__col {
-  @include btn-colors($grid-col);
-}
-
 .grid__col--12 {
   @include flex (column, center);
   @include desk {
@@ -27,7 +23,12 @@
 .card {
   @include desk {
     margin-right: em(48px);
+    text-align: left;
   }
+}
+
+.grid__col {
+  @include btn-colors($grid-col);
 }
 
 @include desk {

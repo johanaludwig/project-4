@@ -1,33 +1,26 @@
-.grid__col--9 {
+.nav {
     margin-bottom: em(16px);
     text-align: center;
     @include flex (column, center);
-
-    a {
-        @extend %center-align;
-        color: $grey;
-        font-size: em(18px);
-        font-weight: $font-weight--light;
+    @media (min-width: $breakp-m) {
+        @include flex(row, center);
+        margin: em(5px);
     }
-    
-    .nav__item {
-        padding: em(13px);
 
-        :hover {
-            background-color: $aqua;
-            border-radius: $br--default;
-            font-weight: $font-weight--medium;
-            color: $white;
-            padding: em(10px) em(130px);
+    &__item {
+        padding: em(16px);
+        a {
+            @extend %center-align;
+            color: $grey;
+            font-size: em(18px);
+            font-weight: $font-weight--light;     
         }
+    }
 
-        @include desk {
-            display: inline-block;
-            margin: em(5px);
-            
-            :hover {
-                padding: em(8px);
-            }
-        }
-    }   
+    :hover {
+        background-color: $aqua;
+        border-radius: $br--default;
+        font-weight: $font-weight--medium;
+        color: $white;
+    }
 }
