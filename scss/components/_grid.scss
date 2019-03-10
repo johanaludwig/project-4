@@ -1,3 +1,10 @@
+.card {
+  @include desk {
+    margin-right: em(48px);
+    text-align: left;
+  }
+}
+
 .grid__row {
   padding-top: em(27px);
   @include flex (column, center);
@@ -11,24 +18,6 @@
   @include desk {
     text-align: center;
   }
-}
-
-.grid__col--12 {
-  @include flex (column, center);
-  @include desk {
-    @include flex (row, space-around);
-  }
-}
-
-.card {
-  @include desk {
-    margin-right: em(48px);
-    text-align: left;
-  }
-}
-
-.grid__col {
-  @include btn-colors($grid-col);
 }
 
 @include desk {
@@ -65,5 +54,16 @@
     .grid__row:nth-of-type(11) {
       @include flex (row, center);
     }
+  }
+}
+
+.grid__col {
+  @include btn-colors($grid-col);
+}
+
+.grid__col--12 {
+  @include flex (column, center);
+  @include desk {
+    @include flex (row, space-around);
   }
 }
