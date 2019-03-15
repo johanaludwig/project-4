@@ -2,4 +2,4 @@ Project 4 - Web Style Guide with Sass
 =========
 
 # Introducction
-This is a Sass project, using partials, variables, extends and mixins.
+This is a style guide that can act as a personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and development in general.
